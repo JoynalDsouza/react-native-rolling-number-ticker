@@ -1,0 +1,19 @@
+{
+  "name": "react-native-rolling-number-ticker",
+  "version": "1.0.0",
+  "description": "React native rolling number ticker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoynalDsouza/react-native-rolling-number-ticker.git"
+  },
+  "author": "Joynal Dsouza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoynalDsouza/react-native-rolling-number-ticker/issues"
+  },
+  "homepage": "https://github.com/JoynalDsouza/react-native-rolling-number-ticker#readme"
+}
