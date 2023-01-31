@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Animated, Easing, StyleSheet, Text, View } from "react-native";
 import PropTypes from "prop-types";
-import { TextView } from "./common";
 
 const RollingNumberTicker = ({
   style,
@@ -40,14 +39,13 @@ const RollingNumberTicker = ({
             counter -= 2;
           }
           return (
-            <TextView
+            <Text
               key={index}
-              smallBold
               style={{ color: "#17BE1B" }}
               // mt={0.8}
             >
               {data}
-            </TextView>
+            </Text>
           );
         } else {
           return (
@@ -76,12 +74,6 @@ const RollingNumberTicker = ({
         },
       ]}
     >
-      <TextView
-        smallBold
-        style={{ color: "#17BE1B" }}
-        // mt={1}
-        mr={2}
-      >{`Win  ₹`}</TextView>
       <View
         style={{
           flexDirection: "row",
@@ -196,11 +188,10 @@ const generateStyles = (textSize) =>
   StyleSheet.create({
     container: {
       width: textSize * 0.62,
-      height: 11,
+      height: textSize,
       overflow: "hidden",
       alignItems: "center",
       justifyContent: "flex-end",
-      // marginBottom: 1
     },
     text: {
       fontSize: textSize,
