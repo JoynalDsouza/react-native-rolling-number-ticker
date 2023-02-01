@@ -9,6 +9,7 @@ const RollingNumberTicker = ({
   fromNumber = 90,
   number = 360,
   duration,
+  animationStartDelay = 0,
 }) => {
   const padLeadingZeros = (num, size) => {
     if (num.toString().length == size) {
@@ -56,6 +57,7 @@ const RollingNumberTicker = ({
               textStyle={textStyle}
               targetNumber={parseFloat(data, 10)}
               duration={duration}
+              animationStartDelay={animationStartDelay}
             />
           );
         }
@@ -95,7 +97,8 @@ class TextTicker extends Component {
       delay: 800,
       number: 1,
     };
-    const { targetNumber, from } = this.props;
+
+    const { targetNumber, from, animationStartDelay } = this.props;
     if (targetNumber < from) {
       for (let i = from; i >= targetNumber; i--) {
         this.numberList.push({ id: i });
@@ -118,7 +121,7 @@ class TextTicker extends Component {
     Animated.timing(animatedValue, {
       toValue: 1,
       duration: this.props.duration,
-
+      delay: animationStartDelay,
       easing: Easing.out(Easing.cubic),
       useNativeDriver: true,
     }).start(() => {
