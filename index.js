@@ -121,7 +121,7 @@ class TextTicker extends Component {
     Animated.timing(animatedValue, {
       toValue: 1,
       duration: this.props.duration,
-      delay: animationStartDelay,
+      delay: this.props.animationStartDelay,
       easing: Easing.out(Easing.cubic),
       useNativeDriver: true,
     }).start(() => {
