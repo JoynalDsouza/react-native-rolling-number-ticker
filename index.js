@@ -175,14 +175,12 @@ class TextTicker extends Component {
 TextTicker.defaultProps = {
   duration: 1800,
   targetNumber: 7,
-  movingDown: true,
   textSize: 35,
 };
 
 TextTicker.propTypes = {
   duration: PropTypes.number,
   targetNumber: PropTypes.number,
-  movingDown: PropTypes.bool,
   textSize: PropTypes.number,
   textStyle: PropTypes.any,
 };
