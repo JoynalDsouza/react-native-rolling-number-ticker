@@ -14,13 +14,13 @@ npm install react-native-rolling-number-ticker
 import RollingNumberTicker from "react-native-rolling-number-ticker";
 ```
 
-| Props | Type | Description |default|
-| --------- | ------------------------------------------------- |35|
-| `textSize` | number | fontSize
-| `fromNumber` |number | Counter start number(required)| none|
-| `number` | number| Counter end number(required) | none|
-| `duration` |number(millisecons) | duration of animation | 1800| |
-| `style` | object(optionAL) | style of container | {} |
+| Props        | Type                | Description                    | default |
+| ------------ | ------------------- | ------------------------------ | ------- |
+| `textSize`   | number              | fontSize                       | 35      |
+| `fromNumber` | number              | Counter start number(required) | none    |
+| `number`     | number              | Counter end number(required)   | none    |
+| `duration`   | number(millisecons) | duration of animation          | 1800    |
+| `style`      | object(optionAL)    | additonal text syles           | {}      |
 
 #### Example
 
