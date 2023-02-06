@@ -2,6 +2,8 @@
 
 Rolling number animation ticker
 
+![](https://github.com/JoynalDsouza/Awesome-RN/blob/main/src/assets/rollling-number-animation.gif)
+
 ## Installation
 
 ```sh
